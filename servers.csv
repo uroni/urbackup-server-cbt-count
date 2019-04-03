@@ -1,0 +1,3 @@
+sep=,
+Server URL,Login username,Password
+http://192.168.1.9/x,statususer,status
