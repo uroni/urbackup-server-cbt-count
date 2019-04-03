@@ -1,6 +1,6 @@
 ## What is this?
 
-A python script to count the number of recently active CBT clients
+A python script to count the number of recently active CBT clients on a UrBackup server
 
 ## Usage
 
