@@ -4,7 +4,7 @@ A python script to count the number of recently active CBT clients on a UrBackup
 
 ## Usage
 
-Edit servers.csv. Input one server per comma separated line. First column is the server URL, second column the login user name and the third the password. E.g.
+Edit `servers.csv`. Input one server per comma separated line. First column is the server URL, second column the login user name and the third the password. E.g.
 
 ```
 http://192.168.0.132:55414/x,statususer,status
