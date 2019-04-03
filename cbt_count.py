@@ -2,6 +2,7 @@ import csv
 import urbackup_api
 import time
 import datetime
+import logging
 
 excel_output = True
 
@@ -11,6 +12,7 @@ def count_cbt_clients_server(serverurl, username, password):
 	clients = server.get_status()
 	
 	if clients==None:
+		print("Getting clients from server "+serverurl+" failed")
 		return None
 	
 	diff_time = 30*24*60*60 # 1 month
@@ -26,6 +28,7 @@ def count_cbt_clients_server(serverurl, username, password):
 	return ret
 
 def count_cbt_clients():
+	#logging.basicConfig(level=logging.DEBUG)
 	with open('servers.csv', newline='') as csvfile_in:
 		with open('server_cbt_counts.csv', 'w', newline='') as csvfile_out:
 			serverreader = csv.reader(csvfile_in, dialect='excel')
